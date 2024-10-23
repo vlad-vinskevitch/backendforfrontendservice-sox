@@ -33,6 +33,11 @@
             <artifactId>postgresql</artifactId>
             <version>${project.version}</version>
         </dependency>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>client-athssox</artifactId>
+            <version>${project.version}</version>
+        </dependency>
         <!-- DEPENDENCY -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -46,7 +51,7 @@
             <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
-                <version>0.8.10</version>
+                <version>${jacoco.version}</version>
                 <executions>
                     <!-- Prepare the agent before tests -->
                     <execution>
